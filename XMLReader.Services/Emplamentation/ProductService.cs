@@ -97,9 +97,6 @@ namespace XMLReader.Services.Emplamentation
             document = XDocument.Parse(res);
             List<XElement> xmlProducts = document.Root.Elements().ToList();
             List<string> Skus = new List<string>();
-
-
-
             foreach (XElement item in xmlProducts)
             {
                 ProductModel product = new ProductModel();
